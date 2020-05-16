@@ -5,10 +5,9 @@ const RenderLogin = ({data}) => {
     const [ email, setEmail ] = useState('')
     const [ password, setPassword ] = useState('')
 
-
     const onSubmitLogin = (e) => {
        e.preventDefault();
-       if ((email === data.email) && password === data.password) {
+       if ((email === data.email) && (password === data.password)) {
            alert ("login ini")
        } else {
            alert ("gagal login")
